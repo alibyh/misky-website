@@ -43,6 +43,7 @@ export default buildConfig({
       },
       collections: {
         media: {
+          prefix: 'mesky',
           disablePayloadAccessControl: true,
         },
       },
