@@ -10,6 +10,12 @@ export interface PayloadImage {
     filesize: number;
     width: number;
     height: number;
+    thumbnailURL?: string;
+    cloudinary?: {
+        public_id: string;
+        secure_url: string;
+        format: string;
+    };
 }
 
 export interface Category {
@@ -139,12 +145,16 @@ export async function getCategories(locale?: string): Promise<Category[]> {
     );
     // Debug: log category images to help diagnose
     if (data.docs.length > 0) {
-        console.log('Categories fetched:', data.docs.map(cat => ({
-            name: cat.name,
-            image: cat.image,
-            imageType: typeof cat.image,
-            imageUrl: typeof cat.image === 'object' ? cat.image?.url : cat.image
-        })));
+        data.docs.forEach(cat => {
+            if (cat.image && typeof cat.image === 'object') {
+                console.log(`Category "${cat.name}" image data:`, {
+                    id: cat.image.id,
+                    url: cat.image.url,
+                    filename: cat.image.filename,
+                    fullObject: cat.image
+                });
+            }
+        });
     }
     return data.docs;
 }
@@ -169,14 +179,50 @@ export function getImageUrl(image: PayloadImage | string | undefined): string {
         // If it's a relative path, prepend base URL
         return `${baseUrl}${image}`;
     }
+    
+    // Priority order for Cloudinary images:
+    // 1. Use secure_url from cloudinary object (most reliable - has correct public_id)
+    // 2. Use thumbnailURL (also has correct public_id)
+    // 3. Use url field (fallback, but may have incorrect public_id)
+    if (image.cloudinary?.secure_url) {
+        // Apply transformations to the secure_url
+        const secureUrl = image.cloudinary.secure_url;
+        // Insert transformations before the version/public_id
+        if (secureUrl.includes('/upload/v')) {
+            // URL format: .../upload/v123456/public_id.jpg
+            // We want: .../upload/f_auto,q_auto/v123456/public_id.jpg
+            return secureUrl.replace('/upload/v', '/upload/f_auto,q_auto/v');
+        } else if (secureUrl.includes('/upload/')) {
+            // URL format: .../upload/public_id.jpg
+            // We want: .../upload/f_auto,q_auto/public_id.jpg
+            const parts = secureUrl.split('/upload/');
+            if (parts.length === 2 && !parts[1].startsWith('f_auto')) {
+                return `${parts[0]}/upload/f_auto,q_auto/${parts[1]}`;
+            }
+        }
+        return secureUrl;
+    }
+    
+    if (image.thumbnailURL) {
+        // Apply transformations to thumbnailURL if needed
+        if (image.thumbnailURL.includes('/upload/v')) {
+            return image.thumbnailURL.replace('/upload/v', '/upload/f_auto,q_auto/v');
+        } else if (image.thumbnailURL.includes('/upload/') && !image.thumbnailURL.includes('f_auto')) {
+            const parts = image.thumbnailURL.split('/upload/');
+            if (parts.length === 2) {
+                return `${parts[0]}/upload/f_auto,q_auto/${parts[1]}`;
+            }
+        }
+        return image.thumbnailURL;
+    }
+    
     if (image.url) {
-        if (image.url.startsWith('http') || image.url.startsWith('data:')) return image.url;
+        if (image.url.startsWith('http') || image.url.startsWith('data:')) {
+            return image.url;
+        }
         return `${baseUrl}${image.url}`;
     }
-    // Fallback: try to construct URL from filename if available
-    if (image.filename) {
-        console.warn('Image URL missing, using filename fallback:', image.filename);
-    }
+    
     return '';
 }
 
