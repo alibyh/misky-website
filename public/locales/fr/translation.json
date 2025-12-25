@@ -1,0 +1,140 @@
+{
+    "brand": "Mesky",
+    "nav": {
+        "home": "Accueil",
+        "search": "Recherche",
+        "wishlist": "Favoris",
+        "account": "Compte",
+        "shop": "Boutique",
+        "menu": "Menu",
+        "guide": "Guide Senteurs",
+        "about": "Notre Essence",
+        "boutiques": "Boutiques & Contact"
+    },
+    "hero": {
+        "newCollection": "Nouvelle Collection",
+        "scentOfGoldenHour": "L'éclat de <1>l'Heure Dorée</1>",
+        "description": "Découvrez l'essence du luxe avec des notes d'ambre, de safran et de oud.",
+        "shop": "ACHETER",
+        "discover": "DÉCOUVRIR"
+    },
+    "sections": {
+        "shopByCategory": "Acheter par Catégorie",
+        "viewAll": "Voir Tout",
+        "bestsellers": "Meilleures Ventes",
+        "ourHeritage": "Notre Héritage",
+        "readOurStory": "Notre Histoire",
+        "heritageQuote": "Un héritage du désert, sublimé par l'art de Grasse.",
+        "heritageText": "Mesky capture l'attrait intemporel des sables dorés et des rituels anciens de la Mauritanie. En mêlant des ingrédients sahariens rares au savoir-faire exquis de la parfumerie française, nous créons des fragrances qui sont plus que de simples parfums—ce sont des voyages de l'âme.",
+        "customerExperiences": "Expériences Clients",
+        "reviews": "Avis Clients"
+    },
+    "product": {
+        "addToCart": "Ajouter au Panier",
+        "selectSize": "Choisir la Taille",
+        "olfactoryNotes": "Notes Olfactives",
+        "topNotes": "Notes de Tête",
+        "heartNotes": "Notes de Cœur",
+        "baseNotes": "Notes de Fond",
+        "longevity": "Tenue",
+        "sillage": "Sillage",
+        "youMayAlsoLike": "Vous aimerez aussi",
+        "total": "Total",
+        "longLasting": "Longue Durée",
+        "moderate": "Modéré"
+    },
+    "footer": {
+        "joinInnerCircle": "Rejoindre le <1>Cercle Privé</1>",
+        "subscribeText": "Inscrivez-vous pour recevoir nos actualités, accéder à des offres exclusives et plus encore.",
+        "emailPlaceholder": "Votre adresse e-mail",
+        "subscribe": "S'abonner",
+        "aboutUs": "À Propos",
+        "scentGuide": "Guide Senteurs",
+        "boutiques": "Boutiques & Contact"
+    },
+    "about": {
+        "title": "Notre Essence",
+        "heroTitle": "L'Âme de Mesky",
+        "heroSubtitle": "Conçu en Mauritanie",
+        "originTitle": "L'Origine",
+        "originHeading": "Né des <br />Sables du Désert",
+        "originText": "Mesky est né des dunes dorées de Mauritanie, au carrefour des routes commerciales ancestrales et des aspirations modernes. Nous capturons l'essence du désert : la chaleur du soleil, le mystère de la nuit et les rituels intemporels du parfum.",
+        "craftTitle": "L'Artisanat",
+        "craftHeading": "Les Meilleurs <br />Ingrédients",
+        "craftText": "Nous sélectionnons le meilleur oud, l'ambre et le musc, en les mariant à des épices et fleurs rares. Nos artisans honorent les techniques traditionnelles tout en adoptant un raffinement contemporain.",
+        "promiseTitle": "Notre Promesse",
+        "promiseText": "\"Créer des parfums qui ne sont pas de simples senteurs, mais des voyages. Authentiques, durables et inoubliables.\"",
+        "founder": "Directeur de Création",
+        "shopAll": "Voir tous les Parfums"
+    },
+    "guide": {
+        "title": "L'Art du Parfum",
+        "curated": "Guide Sélectionné",
+        "discoverTitle": "Découvrez Votre <br />Senteur Signature",
+        "discoverSubtitle": "Comprenez les notes qui vous définissent et explorez nos familles olfactives.",
+        "startGuide": "Commencer le Guide",
+        "shopByMood": "Selon Votre Humeur",
+        "moods": {
+            "romantic": "Romantique",
+            "bold": "Auditieux & Épicé",
+            "everyday": "Fraîcheur Quotidienne",
+            "elegant": "Élégant"
+        },
+        "familiesTitle": "Familles Olfactives",
+        "viewAll": "Voir Tout",
+        "familiesSubtitle": "Explorez les quatre catégories principales de la parfumerie moderne.",
+        "families": {
+            "floral": {
+                "title": "Floral",
+                "desc": "Romantique, doux et féminin. La famille la plus populaire en parfumerie.",
+                "notes": "Rose • Jasmin • Gardénia"
+            },
+            "woody": {
+                "title": "Boisé",
+                "desc": "Chaleureux, terreux et sec. Transmet souvent confiance et mystère.",
+                "notes": "Santal • Cèdre • Vétiver"
+            },
+            "amber": {
+                "title": "Ambré",
+                "desc": "Sensuel, exotique et riche. Parfait pour le soir et les affirmations audacieuses.",
+                "notes": "Vanille • Musc • Épices"
+            },
+            "fresh": {
+                "title": "Frais",
+                "desc": "Vif, propre et énergique. Comme une brise fraîche ou des embruns marins.",
+                "notes": "Bergamote • Sel Marin • Citron"
+            }
+        },
+        "quiz": {
+            "title": "Vous ne savez pas par où commencer ?",
+            "text": "Répondez à 3 questions simples sur votre style et votre humeur pour trouver votre parfum idéal.",
+            "button": "Faire le Quiz Senteur"
+        }
+    },
+    "contact": {
+        "title": "Boutiques & Contact",
+        "subtitle": "Découvrez Mesky en personne",
+        "whatsapp": "Chatter sur WhatsApp",
+        "visitUs": "Visitez nos Boutiques",
+        "getDirections": "Obtenir l'Itinéraire",
+        "support": "Service Client",
+        "inquiries": "Presse & Demandes",
+        "branches": {
+            "branch1": {
+                "name": "Televizion",
+                "address": "Près de la Pharmacie Paris, Televizion, Nouakchott",
+                "hours": "Lun - Dim : 10h00 - 23h00"
+            },
+            "branch2": {
+                "name": "Carrefour Gambour",
+                "address": "Face au Carrefour Gambour, Nouakchott",
+                "hours": "Lun - Dim : 10h00 - 23h00"
+            },
+            "branch3": {
+                "name": "Branche Arafat",
+                "address": "District d'Arafat, Nouakchott-Sud",
+                "hours": "Lun - Dim : 10h00 - 23h00"
+            }
+        }
+    }
+}

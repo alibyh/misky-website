@@ -1,0 +1,140 @@
+{
+    "brand": "Mesky",
+    "nav": {
+        "home": "Home",
+        "search": "Search",
+        "wishlist": "Wishlist",
+        "account": "Account",
+        "shop": "Shop",
+        "menu": "Menu",
+        "guide": "Scent Guide",
+        "about": "Our Essence",
+        "boutiques": "Boutiques & Contact"
+    },
+    "hero": {
+        "newCollection": "New Collection",
+        "scentOfGoldenHour": "Scent of the <1>Golden Hour</1>",
+        "description": "Experience the essence of luxury with notes of amber, saffron, and oud.",
+        "shop": "SHOP",
+        "discover": "DISCOVER"
+    },
+    "sections": {
+        "shopByCategory": "Shop by Category",
+        "viewAll": "View All",
+        "bestsellers": "Bestsellers",
+        "ourHeritage": "Our Heritage",
+        "readOurStory": "Read Our Story",
+        "heritageQuote": "A legacy of the desert, refined by the art of Grasse.",
+        "heritageText": "Mesky captures the timeless allure of Mauritania’s golden sands and ancient rituals. By blending rare Saharan ingredients with the exquisite craftsmanship of French perfumery, we create scents that are more than just fragrances—they are journeys of the soul.",
+        "customerExperiences": "Customer Experiences",
+        "reviews": "Reviews"
+    },
+    "product": {
+        "addToCart": "Add to Cart",
+        "selectSize": "Select Size",
+        "olfactoryNotes": "Olfactory Notes",
+        "topNotes": "Top Notes",
+        "heartNotes": "Heart Notes",
+        "baseNotes": "Base Notes",
+        "longevity": "Longevity",
+        "sillage": "Sillage",
+        "youMayAlsoLike": "You May Also Like",
+        "total": "Total",
+        "longLasting": "Long Lasting",
+        "moderate": "Moderate"
+    },
+    "footer": {
+        "joinInnerCircle": "Join the <1>Inner Circle</1>",
+        "subscribeText": "Subscribe to receive updates, access to exclusive deals, and more.",
+        "emailPlaceholder": "Your email address",
+        "subscribe": "Subscribe",
+        "aboutUs": "About Us",
+        "scentGuide": "Scent Guide",
+        "boutiques": "Boutiques & Contact"
+    },
+    "about": {
+        "title": "Our Essence",
+        "heroTitle": "The Soul of Mesky",
+        "heroSubtitle": "Crafted in Mauritania",
+        "originTitle": "The Origin",
+        "originHeading": "Born from the <br />Desert Sands",
+        "originText": "Mesky was born from the golden dunes of Mauritania, where ancient trade routes meet modern aspirations. We capture the essence of the desert—the warmth of the sun, the mystery of the night, and the timeless rituals of scent.",
+        "craftTitle": "The Craft",
+        "craftHeading": "Nature's Finest <br />Ingredients",
+        "craftText": "We source the finest oud, amber, and musk, blending them with rare spices and florals. Our artisans honor traditional techniques while embracing contemporary refinement.",
+        "promiseTitle": "Our Promise",
+        "promiseText": "\"To create perfumes that are not just scents, but journeys. Authentic, lasting, and unforgettable.\"",
+        "founder": "Creative Director",
+        "shopAll": "Shop All Scents"
+    },
+    "guide": {
+        "title": "The Art of Scent",
+        "curated": "Curated Guide",
+        "discoverTitle": "Discover Your <br />Signature Scent",
+        "discoverSubtitle": "Understand the notes that define you and explore our olfactory families.",
+        "startGuide": "Start Guide",
+        "shopByMood": "Shop by Mood",
+        "moods": {
+            "romantic": "Romantic",
+            "bold": "Bold & Spicy",
+            "everyday": "Everyday Fresh",
+            "elegant": "Elegant"
+        },
+        "familiesTitle": "Olfactory Families",
+        "viewAll": "View All",
+        "familiesSubtitle": "Explore the four main categories that define modern perfumery.",
+        "families": {
+            "floral": {
+                "title": "Floral",
+                "desc": "Romantic, soft, and feminine. The most popular family in perfumery.",
+                "notes": "Rose • Jasmine • Gardenia"
+            },
+            "woody": {
+                "title": "Woody",
+                "desc": "Warm, earthy, and dry. Often conveys confidence and mystery.",
+                "notes": "Sandalwood • Cedar • Vetiver"
+            },
+            "amber": {
+                "title": "Amber",
+                "desc": "Sensual, exotic, and rich. Perfect for evening wear and bold statements.",
+                "notes": "Vanilla • Musk • Spice"
+            },
+            "fresh": {
+                "title": "Fresh",
+                "desc": "Crisp, clean, and energetic. Like a cool breeze or ocean spray.",
+                "notes": "Bergamot • Sea Salt • Lemon"
+            }
+        },
+        "quiz": {
+            "title": "Not sure where to start?",
+            "text": "Answer 3 simple questions about your style and mood to find your perfect match.",
+            "button": "Take the Scent Quiz"
+        }
+    },
+    "contact": {
+        "title": "Boutiques & Contact",
+        "subtitle": "Experience Mesky in person",
+        "whatsapp": "Chat on WhatsApp",
+        "visitUs": "Visit our Boutiques",
+        "getDirections": "Get Directions",
+        "support": "Customer Support",
+        "inquiries": "Press & Inquiries",
+        "branches": {
+            "branch1": {
+                "name": "Televizion",
+                "address": "Near Pharmacy Paris, Televizion, Nouakchott",
+                "hours": "Mon - Sun: 10:00 AM - 11:00 PM"
+            },
+            "branch2": {
+                "name": "Carrefour Bakar",
+                "address": "Opposite Carrefour Bakar, Nouakchott",
+                "hours": "Mon - Sun: 10:00 AM - 11:00 PM"
+            },
+            "branch3": {
+                "name": "Arafat Branch",
+                "address": "Arafat District, Nouakchott-Sud",
+                "hours": "Mon - Sun: 10:00 AM - 11:00 PM"
+            }
+        }
+    }
+}
