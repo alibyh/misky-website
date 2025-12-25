@@ -137,6 +137,15 @@ export async function getCategories(locale?: string): Promise<Category[]> {
     const data: PayloadResponse<Category> = await fetchWithCacheControl(
         `${API_URL}/categories?sort=displayOrder&limit=100&locale=${loc}&depth=2`
     );
+    // Debug: log category images to help diagnose
+    if (data.docs.length > 0) {
+        console.log('Categories fetched:', data.docs.map(cat => ({
+            name: cat.name,
+            image: cat.image,
+            imageType: typeof cat.image,
+            imageUrl: typeof cat.image === 'object' ? cat.image?.url : cat.image
+        })));
+    }
     return data.docs;
 }
 
@@ -154,12 +163,19 @@ export function getImageUrl(image: PayloadImage | string | undefined): string {
     if (!image) return '';
     const baseUrl = API_URL.replace('/api', '');
     if (typeof image === 'string') {
+        // If it's a string ID, we can't resolve it here - it should be populated by the API
+        // But if it's already a URL, return it
         if (image.startsWith('http') || image.startsWith('data:')) return image;
+        // If it's a relative path, prepend base URL
         return `${baseUrl}${image}`;
     }
     if (image.url) {
         if (image.url.startsWith('http') || image.url.startsWith('data:')) return image.url;
         return `${baseUrl}${image.url}`;
+    }
+    // Fallback: try to construct URL from filename if available
+    if (image.filename) {
+        console.warn('Image URL missing, using filename fallback:', image.filename);
     }
     return '';
 }
