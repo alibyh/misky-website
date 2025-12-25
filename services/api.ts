@@ -107,6 +107,7 @@ export async function getProducts(params?: {
     if (params?.page) queryParams.append('page', params.page.toString());
     if (params?.where) queryParams.append('where', JSON.stringify(params.where));
     queryParams.append('locale', sanitizeLocale(params?.locale));
+    queryParams.append('depth', '2');
 
     return fetchWithCacheControl(`${API_URL}/products?${queryParams}`);
 }
@@ -125,7 +126,7 @@ export async function getFeaturedProducts(limit = 10, locale?: string): Promise<
 export async function getProductBySlug(slug: string, locale?: string): Promise<Product | null> {
     const loc = sanitizeLocale(locale);
     const data: PayloadResponse<Product> = await fetchWithCacheControl(
-        `${API_URL}/products?where[slug][equals]=${slug}&limit=1&locale=${loc}`
+        `${API_URL}/products?where[slug][equals]=${slug}&limit=1&locale=${loc}&depth=2`
     );
     return data.docs[0] || null;
 }
@@ -143,7 +144,7 @@ export async function getCategories(locale?: string): Promise<Category[]> {
 export async function getHeroSlides(locale?: string): Promise<HeroSlide[]> {
     const loc = sanitizeLocale(locale);
     const data: PayloadResponse<HeroSlide> = await fetchWithCacheControl(
-        `${API_URL}/hero-slides?where[active][equals]=true&sort=displayOrder&limit=10&locale=${loc}`
+        `${API_URL}/hero-slides?where[active][equals]=true&sort=displayOrder&limit=10&locale=${loc}&depth=2`
     );
     return data.docs;
 }
@@ -152,34 +153,14 @@ export async function getHeroSlides(locale?: string): Promise<HeroSlide[]> {
 export function getImageUrl(image: PayloadImage | string | undefined): string {
     if (!image) return '';
     const baseUrl = API_URL.replace('/api', '');
-    
-    // Handle string URLs
     if (typeof image === 'string') {
         if (image.startsWith('http') || image.startsWith('data:')) return image;
         return `${baseUrl}${image}`;
     }
-    
-    // Handle PayloadImage object
     if (image.url) {
-        // If it's already a full URL (http/https/data), return as-is
-        if (image.url.startsWith('http') || image.url.startsWith('data:')) {
-            return image.url;
-        }
-        
-        // If it's a relative path, prepend base URL
+        if (image.url.startsWith('http') || image.url.startsWith('data:')) return image.url;
         return `${baseUrl}${image.url}`;
     }
-    
-    // Fallback: try to construct from filename if available
-    if (image.filename) {
-        // If filename looks like a Cloudinary URL, return it
-        if (image.filename.includes('cloudinary.com')) {
-            return image.filename;
-        }
-        // Otherwise, try to construct a path
-        return `${baseUrl}/media/${image.filename}`;
-    }
-    
     return '';
 }
 
