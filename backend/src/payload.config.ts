@@ -41,9 +41,9 @@ export default buildConfig({
         api_key: process.env.CLOUDINARY_API_KEY || '',
         api_secret: process.env.CLOUDINARY_API_SECRET || '',
       },
+      folder: 'mesky',
       collections: {
         media: {
-          prefix: 'mesky',
           disablePayloadAccessControl: true,
         },
       },
