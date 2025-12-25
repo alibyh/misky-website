@@ -134,7 +134,7 @@ export async function getProductBySlug(slug: string, locale?: string): Promise<P
 export async function getCategories(locale?: string): Promise<Category[]> {
     const loc = sanitizeLocale(locale);
     const data: PayloadResponse<Category> = await fetchWithCacheControl(
-        `${API_URL}/categories?sort=displayOrder&limit=100&locale=${loc}`
+        `${API_URL}/categories?sort=displayOrder&limit=100&locale=${loc}&depth=2`
     );
     return data.docs;
 }
@@ -152,14 +152,34 @@ export async function getHeroSlides(locale?: string): Promise<HeroSlide[]> {
 export function getImageUrl(image: PayloadImage | string | undefined): string {
     if (!image) return '';
     const baseUrl = API_URL.replace('/api', '');
+    
+    // Handle string URLs
     if (typeof image === 'string') {
         if (image.startsWith('http') || image.startsWith('data:')) return image;
         return `${baseUrl}${image}`;
     }
+    
+    // Handle PayloadImage object
     if (image.url) {
-        if (image.url.startsWith('http') || image.url.startsWith('data:')) return image.url;
+        // If it's already a full URL (http/https/data), return as-is
+        if (image.url.startsWith('http') || image.url.startsWith('data:')) {
+            return image.url;
+        }
+        
+        // If it's a relative path, prepend base URL
         return `${baseUrl}${image.url}`;
     }
+    
+    // Fallback: try to construct from filename if available
+    if (image.filename) {
+        // If filename looks like a Cloudinary URL, return it
+        if (image.filename.includes('cloudinary.com')) {
+            return image.filename;
+        }
+        // Otherwise, try to construct a path
+        return `${baseUrl}/media/${image.filename}`;
+    }
+    
     return '';
 }
 
