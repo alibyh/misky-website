@@ -52,12 +52,14 @@ export default buildConfig({
     'http://localhost:3000',
     'http://127.0.0.1:3000',
     'http://localhost:4000',
-    '*' // Allow all for demo purposes, can be restricted later
+    'https://mesky-store.vercel.app',
+    '*' // Keep wildcard for now to be safe, but specific domain is better
   ],
   csrf: [
     'http://localhost:3000',
     'http://127.0.0.1:3000',
     'http://localhost:4000',
+    'https://mesky-store.vercel.app',
   ],
   localization: {
     locales: ['en', 'ar', 'fr'],
