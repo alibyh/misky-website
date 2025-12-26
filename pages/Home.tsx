@@ -14,10 +14,9 @@ import {
 } from '../services/api';
 
 export const reviews = [
-  '/reviews/Screenshot 2025-12-24 at 14.26.55.png',
-  '/reviews/Screenshot 2025-12-24 at 14.27.11.png',
-  '/reviews/Screenshot 2025-12-24 at 14.27.39.png',
-  '/reviews/Screenshot 2025-12-24 at 14.28.36.png'
+  '/reviews/review1.png',
+  '/reviews/review2.png',
+  '/reviews/review3.png',
 ];
 
 export const Home: React.FC = () => {
@@ -123,7 +122,7 @@ export const Home: React.FC = () => {
                   <div
                     className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[15000ms] ${currentSlide === index ? 'animate-ken-burns' : ''
                       }`}
-                    style={{ backgroundImage: 'url("/about-header.png")' }}
+                    style={{ backgroundImage: 'url("/about-header.jpeg")' }}
                   ></div>
 
                   {/* Enhanced Gradients */}
@@ -188,7 +187,7 @@ export const Home: React.FC = () => {
                 <div className="absolute inset-0 bg-cover bg-center animate-ken-burns" style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZVR_xMbew-ss4-QTkEfleHhUaWz_6WjivE3I1dWzG6bgQVK0WLvs_-d-Jjgb9j-F_mz2n0kX2oFZQqL4dGTpoBKcJ2Q9HytKFHZPPAKZBqnNC4Vcx5sd5uhqI2JePJemq53c_KAVmcw5FjRk6qDc01S5lkmrRufLyDJtMjFMxYjzJLynjxjCRD4_6Iw6n0Dz2rCbn4YvKXmurSrWs-zi9Xg7W45UAgWLJsIXtJ269Iz_pc73A5YHdECXx1tjSMxQCFG2GUHuvxQxo")' }}></div>
                 <div className="absolute inset-0 bg-background-dark/60"></div>
                 <div className="relative z-20 flex h-full flex-col items-center justify-center px-6 text-center">
-                  <h1 className="text-white font-serif text-5xl reveal-text">Mesky</h1>
+                  <h1 className="text-white font-serif text-5xl reveal-text">FATALES</h1>
                 </div>
               </div>
             )}
@@ -392,23 +391,23 @@ export const Home: React.FC = () => {
                 </li>
               </ul>
               <div className="flex flex-col gap-4 text-right">
-                <a href="https://www.tiktok.com/@mesky44" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end gap-2 hover:text-primary transition-colors">
-                  <span>TikTok</span>
-                  <i className="fa-brands fa-tiktok text-sm"></i>
+                <a href="https://www.snapchat.com/@fatales_m" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end gap-2 hover:text-primary transition-colors">
+                  <span>Snapchat</span>
+                  <i className="fa-brands fa-snapchat text-sm"></i>
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end gap-2 hover:text-primary transition-colors">
+                <a href="https://www.facebook.com/fatalesmauritanie/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end gap-2 hover:text-primary transition-colors">
                   <span>Facebook</span>
                   <i className="fa-brands fa-facebook-f text-sm"></i>
                 </a>
 
-                <a href="tel:+22232291908" className="flex items-center justify-end gap-2 hover:text-primary transition-colors">
-                  <span dir="ltr">+222 32 29 19 08</span>
+                <a href="tel:+22234258492" className="flex items-center justify-end gap-2 hover:text-primary transition-colors">
+                  <span dir="ltr">+222 34 25 84 92</span>
                   <i className="fa-solid fa-phone text-sm"></i>
                 </a>
               </div>
             </div>
             <div className="mt-12 text-center text-white/20 text-[10px] tracking-widest uppercase">
-              © {new Date().getFullYear()} Mesky.
+              © {new Date().getFullYear()} FATALES.
             </div>
           </footer>
         </>

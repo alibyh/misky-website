@@ -1,5 +1,5 @@
 {
-    "brand": "Mesky",
+    "brand": "FATALES",
     "nav": {
         "home": "Accueil",
         "search": "Recherche",
@@ -25,7 +25,7 @@
         "ourHeritage": "Notre Héritage",
         "readOurStory": "Notre Histoire",
         "heritageQuote": "Un héritage du désert, sublimé par l'art de Grasse.",
-        "heritageText": "Mesky capture l'attrait intemporel des sables dorés et des rituels anciens de la Mauritanie. En mêlant des ingrédients sahariens rares au savoir-faire exquis de la parfumerie française, nous créons des fragrances qui sont plus que de simples parfums—ce sont des voyages de l'âme.",
+        "heritageText": "FATALES capture l'attrait intemporel des sables dorés et des rituels anciens de la Mauritanie. En mêlant des ingrédients sahariens rares au savoir-faire exquis de la parfumerie française, nous créons des fragrances qui sont plus que de simples parfums—ce sont des voyages de l'âme.",
         "customerExperiences": "Expériences Clients",
         "reviews": "Avis Clients"
     },
@@ -54,11 +54,11 @@
     },
     "about": {
         "title": "Notre Essence",
-        "heroTitle": "L'Âme de Mesky",
+        "heroTitle": "L'Âme de FATALES",
         "heroSubtitle": "Conçu en Mauritanie",
         "originTitle": "L'Origine",
         "originHeading": "Né des <br />Sables du Désert",
-        "originText": "Mesky est né des dunes dorées de Mauritanie, au carrefour des routes commerciales ancestrales et des aspirations modernes. Nous capturons l'essence du désert : la chaleur du soleil, le mystère de la nuit et les rituels intemporels du parfum.",
+        "originText": "FATALES est né des dunes dorées de Mauritanie, au carrefour des routes commerciales ancestrales et des aspirations modernes. Nous capturons l'essence du désert : la chaleur du soleil, le mystère de la nuit et les rituels intemporels du parfum.",
         "craftTitle": "L'Artisanat",
         "craftHeading": "Les Meilleurs <br />Ingrédients",
         "craftText": "Nous sélectionnons le meilleur oud, l'ambre et le musc, en les mariant à des épices et fleurs rares. Nos artisans honorent les techniques traditionnelles tout en adoptant un raffinement contemporain.",
@@ -113,7 +113,7 @@
     },
     "contact": {
         "title": "Boutiques & Contact",
-        "subtitle": "Découvrez Mesky en personne",
+        "subtitle": "Découvrez FATALES en personne",
         "whatsapp": "Chatter sur WhatsApp",
         "visitUs": "Visitez nos Boutiques",
         "getDirections": "Obtenir l'Itinéraire",
@@ -121,18 +121,8 @@
         "inquiries": "Presse & Demandes",
         "branches": {
             "branch1": {
-                "name": "Televizion",
-                "address": "Près de la Pharmacie Paris, Televizion, Nouakchott",
-                "hours": "Lun - Dim : 10h00 - 23h00"
-            },
-            "branch2": {
-                "name": "Carrefour Gambour",
-                "address": "Face au Carrefour Gambour, Nouakchott",
-                "hours": "Lun - Dim : 10h00 - 23h00"
-            },
-            "branch3": {
-                "name": "Branche Arafat",
-                "address": "District d'Arafat, Nouakchott-Sud",
+                "name": "FATALES Boutique",
+                "address": "Nouakchott, Mauritanie",
                 "hours": "Lun - Dim : 10h00 - 23h00"
             }
         }

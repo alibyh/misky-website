@@ -14,34 +14,19 @@ export const Contact: React.FC = () => {
     const branches = [
         {
             id: 'branch1',
-            coords: '18.108288824702704, -15.980190034653045',
+            coords: '',
             image: '/images/branches/branch-1.jpg',
             key: 'branch1',
-            searchQuery: 'مسكي للعطور فرع التلفزيون Nouakchott Mauritania'
-        },
-        {
-            id: 'branch2',
-            coords: '18.118304918608672, -15.960671199999997',
-            image: '/images/branches/branch-2.jpg',
-            key: 'branch2',
-            searchQuery: 'مسكي للعطور كرفور بكار Nouakchott'
-        },
-        {
-            id: 'branch3',
-            coords: '18.073877285811534, -15.956373213082069',
-            image: '/images/branches/branch-3.jpg',
-            key: 'branch3',
-            searchQuery: 'مسكي للعطور فرع عرفات Nouakchott'
+            mapLink: 'https://maps.app.goo.gl/r4tEgU7VyienagDs9'
         }
     ];
 
     const handleWhatsAppClick = () => {
-        window.open('https://wa.me/22232291908', '_blank');
+        window.open('https://wa.me/22234258492', '_blank');
     };
 
     const handleMapClick = (branch: typeof branches[0]) => {
-        const query = `${branch.searchQuery} ${branch.coords}`;
-        window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`, '_blank');
+        window.open(branch.mapLink, '_blank');
     };
 
     return (
@@ -168,7 +153,7 @@ export const Contact: React.FC = () => {
                                     </div>
                                     <div>
                                         <p className="text-xs text-gray-400 mb-0.5 uppercase tracking-wider font-bold">Email</p>
-                                        <p className="text-sm font-medium text-gray-700 dark:text-gray-200">contact@mesky.mr</p>
+                                        <p className="text-sm font-medium text-gray-700 dark:text-gray-200">contact@fatales.mr</p>
                                     </div>
                                 </div>
                                 <span className={`material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors ${isRTL ? 'rotate-180' : ''}`}>chevron_right</span>
@@ -181,7 +166,7 @@ export const Contact: React.FC = () => {
                                     </div>
                                     <div>
                                         <p className="text-xs text-gray-400 mb-0.5 uppercase tracking-wider font-bold">WhatsApp</p>
-                                        <p className="text-sm font-medium text-gray-700 dark:text-gray-200" dir="ltr">+222 32 29 19 08</p>
+                                        <p className="text-sm font-medium text-gray-700 dark:text-gray-200" dir="ltr">+222 34 25 84 92</p>
                                     </div>
                                 </div>
                                 <span className={`material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors ${isRTL ? 'rotate-180' : ''}`}>chevron_right</span>
@@ -193,21 +178,21 @@ export const Contact: React.FC = () => {
                 {/* Footer info */}
                 <footer className="mt-12 mb-12 px-6 flex flex-col items-center">
                     <div className="flex items-center gap-4 mb-8">
-                        <a href="https://www.tiktok.com/@mesky44" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
-                            <i className="fa-brands fa-tiktok"></i>
+                        <a href="https://www.snapchat.com/@fatales_m" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+                            <i className="fa-brands fa-snapchat"></i>
                         </a>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+                        <a href="https://www.facebook.com/fatalesmauritanie/" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
                             <i className="fa-brands fa-facebook-f"></i>
                         </a>
-                        <a href="https://wa.me/22232291908" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+                        <a href="https://wa.me/22234258492" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
                             <i className="fa-brands fa-whatsapp"></i>
                         </a>
-                        <a href="tel:+22232291908" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+                        <a href="tel:+22234258492" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
                             <i className="fa-solid fa-phone"></i>
                         </a>
                     </div>
                     <p className="text-[10px] text-gray-400 dark:text-gray-600 tracking-[0.3em] uppercase mb-2">
-                        MESKY • EST. {new Date().getFullYear()}
+                        FATALES • EST. {new Date().getFullYear()}
                     </p>
                     <p className="text-[8px] text-gray-400 dark:text-gray-700 font-light italic">
                         Quality without compromise

@@ -89,21 +89,21 @@ export const Guide: React.FC = () => {
 
       <footer className="mt-auto border-t border-white/5 bg-background-dark py-12 px-6 flex flex-col items-center text-center">
         <div className="flex items-center gap-4 mb-8">
-          <a href="https://www.tiktok.com/@mesky44" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
-            <i className="fa-brands fa-tiktok"></i>
+          <a href="https://www.snapchat.com/@fatales_m" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+            <i className="fa-brands fa-snapchat"></i>
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+          <a href="https://www.facebook.com/fatalesmauritanie/" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
             <i className="fa-brands fa-facebook-f"></i>
           </a>
 
-          <a href="https://wa.me/22232291908" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+          <a href="https://wa.me/22234258492" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
             <i className="fa-brands fa-whatsapp"></i>
           </a>
-          <a href="tel:+22232291908" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+          <a href="tel:+22234258492" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
             <i className="fa-solid fa-phone"></i>
           </a>
         </div>
-        <h3 className="mb-2 font-display text-lg font-light text-white uppercase tracking-[0.2em]">MESKY</h3>
+        <h3 className="mb-2 font-display text-lg font-light text-white uppercase tracking-[0.2em]">FATALES</h3>
         <p className="mb-6 text-[10px] text-gray-500 uppercase tracking-widest">EST. {new Date().getFullYear()}</p>
         <button onClick={() => navigate('/shop')} className="inline-block border-b border-primary pb-1 text-sm text-primary transition-opacity hover:opacity-80 uppercase tracking-wider font-bold">{t('about.shopAll')}</button>
       </footer>

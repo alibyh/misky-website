@@ -1,5 +1,5 @@
 {
-    "brand": "Mesky",
+    "brand": "FATALES",
     "nav": {
         "home": "Home",
         "search": "Search",
@@ -25,7 +25,7 @@
         "ourHeritage": "Our Heritage",
         "readOurStory": "Read Our Story",
         "heritageQuote": "A legacy of the desert, refined by the art of Grasse.",
-        "heritageText": "Mesky captures the timeless allure of Mauritania’s golden sands and ancient rituals. By blending rare Saharan ingredients with the exquisite craftsmanship of French perfumery, we create scents that are more than just fragrances—they are journeys of the soul.",
+        "heritageText": "FATALES captures the timeless allure of Mauritania's golden sands and ancient rituals. By blending rare Saharan ingredients with the exquisite craftsmanship of French perfumery, we create scents that are more than just fragrances—they are journeys of the soul.",
         "customerExperiences": "Customer Experiences",
         "reviews": "Reviews"
     },
@@ -54,11 +54,11 @@
     },
     "about": {
         "title": "Our Essence",
-        "heroTitle": "The Soul of Mesky",
+        "heroTitle": "The Soul of FATALES",
         "heroSubtitle": "Crafted in Mauritania",
         "originTitle": "The Origin",
         "originHeading": "Born from the <br />Desert Sands",
-        "originText": "Mesky was born from the golden dunes of Mauritania, where ancient trade routes meet modern aspirations. We capture the essence of the desert—the warmth of the sun, the mystery of the night, and the timeless rituals of scent.",
+        "originText": "FATALES was born from the golden dunes of Mauritania, where ancient trade routes meet modern aspirations. We capture the essence of the desert—the warmth of the sun, the mystery of the night, and the timeless rituals of scent.",
         "craftTitle": "The Craft",
         "craftHeading": "Nature's Finest <br />Ingredients",
         "craftText": "We source the finest oud, amber, and musk, blending them with rare spices and florals. Our artisans honor traditional techniques while embracing contemporary refinement.",
@@ -113,7 +113,7 @@
     },
     "contact": {
         "title": "Boutiques & Contact",
-        "subtitle": "Experience Mesky in person",
+        "subtitle": "Experience FATALES in person",
         "whatsapp": "Chat on WhatsApp",
         "visitUs": "Visit our Boutiques",
         "getDirections": "Get Directions",
@@ -121,18 +121,8 @@
         "inquiries": "Press & Inquiries",
         "branches": {
             "branch1": {
-                "name": "Televizion",
-                "address": "Near Pharmacy Paris, Televizion, Nouakchott",
-                "hours": "Mon - Sun: 10:00 AM - 11:00 PM"
-            },
-            "branch2": {
-                "name": "Carrefour Bakar",
-                "address": "Opposite Carrefour Bakar, Nouakchott",
-                "hours": "Mon - Sun: 10:00 AM - 11:00 PM"
-            },
-            "branch3": {
-                "name": "Arafat Branch",
-                "address": "Arafat District, Nouakchott-Sud",
+                "name": "FATALES Boutique",
+                "address": "Nouakchott, Mauritania",
                 "hours": "Mon - Sun: 10:00 AM - 11:00 PM"
             }
         }

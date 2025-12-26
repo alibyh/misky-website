@@ -54,9 +54,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                         </div>
 
                         <div className="flex items-center gap-2 cursor-pointer group" onClick={() => navigate('/')}>
-                            <span className="text-white/40 group-hover:text-white transition-colors text-[15px] font-bold tracking-[0.2em] uppercase mt-1">Mesky</span>
-                            <img src="/brandLogo.png" alt={t('brand')} className="h-10 w-auto object-contain mix-blend-screen" />
-                            <span className="text-primary/70 group-hover:text-primary transition-colors font-arabic text-xl tracking-wider">مسكي</span>
+                            <img src="/FatalesLogo.png" alt={t('brand')} className="h-32 w-auto object-contain mix-blend-screen" />
                         </div>
 
                         <div className="flex items-center gap-1">
@@ -167,17 +165,17 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
 
                         <div className="mt-auto pt-8 border-t border-white/5">
                             <div className="flex flex-col gap-6">
-                                <a href="https://www.tiktok.com/@mesky44" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/60 hover:text-primary transition-colors text-sm">
-                                    <i className="fa-brands fa-tiktok w-5 text-center"></i>
-                                    <span>TikTok</span>
+                                <a href="https://www.snapchat.com/@fatales_m" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/60 hover:text-primary transition-colors text-sm">
+                                    <i className="fa-brands fa-snapchat w-5 text-center"></i>
+                                    <span>Snapchat</span>
                                 </a>
-                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/60 hover:text-primary transition-colors text-sm">
+                                <a href="https://www.facebook.com/fatalesmauritanie/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/60 hover:text-primary transition-colors text-sm">
                                     <i className="fa-brands fa-facebook-f w-5 text-center"></i>
                                     <span>Facebook</span>
                                 </a>
-                                <a href="tel:+22232291908" className="flex items-center gap-3 text-white/60 hover:text-primary transition-colors text-sm">
+                                <a href="tel:+22234258492" className="flex items-center gap-3 text-white/60 hover:text-primary transition-colors text-sm">
                                     <i className="fa-solid fa-phone w-5 text-center"></i>
-                                    <span dir="ltr">+222 32 29 19 08</span>
+                                    <span dir="ltr">+222 34 25 84 92</span>
                                 </a>
                             </div>
                         </div>

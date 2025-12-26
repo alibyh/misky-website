@@ -10,7 +10,7 @@ export const About: React.FC = () => {
     <div className="relative flex flex-col min-h-screen bg-white dark:bg-black text-slate-900 dark:text-white font-display antialiased overflow-x-hidden pt-4">
 
       <div className="relative w-full aspect-[4/5]">
-        <div className="absolute inset-0 bg-cover bg-center animate-zoom-in-slow" style={{ backgroundImage: 'url("/about-header.png")' }}>
+        <div className="absolute inset-0 bg-cover bg-center animate-zoom-in-slow" style={{ backgroundImage: 'url("/about-header.jpeg")' }}>
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
         </div>
         <div className="relative h-full flex flex-col justify-end items-center pb-12 px-6 text-center z-10">
@@ -82,22 +82,22 @@ export const About: React.FC = () => {
       </div>
       <footer className="mt-12 mb-12 px-6 flex flex-col items-center border-t border-neutral-200 dark:border-neutral-800 pt-12">
         <div className="flex items-center gap-4 mb-8">
-          <a href="https://www.tiktok.com/@mesky44" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
-            <i className="fa-brands fa-tiktok"></i>
+          <a href="https://www.snapchat.com/@fatales_m" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+            <i className="fa-brands fa-snapchat"></i>
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+          <a href="https://www.facebook.com/fatalesmauritanie/" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
             <i className="fa-brands fa-facebook-f"></i>
           </a>
 
-          <a href="https://wa.me/22232291908" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+          <a href="https://wa.me/22234258492" target="_blank" rel="noopener noreferrer" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
             <i className="fa-brands fa-whatsapp"></i>
           </a>
-          <a href="tel:+22232291908" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
+          <a href="tel:+22234258492" className="size-10 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all">
             <i className="fa-solid fa-phone"></i>
           </a>
         </div>
         <p className="text-[10px] text-gray-400 dark:text-gray-600 tracking-[0.3em] uppercase mb-2">
-          MESKY • EST. {new Date().getFullYear()}
+          FATALES • EST. {new Date().getFullYear()}
         </p>
       </footer>
     </div>
